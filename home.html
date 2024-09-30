@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Sustainability Survey</h1>
+            <p>Help us calculate your daily CO2 emissions and provide tips to reduce your impact!</p>
+        </div>
+    </header>
+
+    <!-- Main Survey Section -->
+    <section class="centered-section">
+        <div class="questionnaire-container">
+            <h2>Let's Start Your Daily CO2 Emissions Survey</h2>
+
+            <!-- Questions Form -->
+            <form id="co2-survey-form">
+
+                <!-- Daily Travel Question -->
+                <label for="daily-distance">How many kilometers do you travel daily (by car)?</label>
+                <input type="number" id="daily-distance" placeholder="e.g. 20 km" required>
+
+                <!-- Energy Consumption Question -->
+                <label for="electricity-use">How much electricity (kWh) do you use daily?</label>
+                <input type="number" id="electricity-use" placeholder="e.g. 10 kWh" required>
+
+                <!-- Meat Consumption Question -->
+                <label for="meat-consumption">How many times a week do you consume meat?</label>
+                <input type="number" id="meat-consumption" placeholder="e.g. 5 times" required>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="submitSurvey()">Submit & Get Suggestions</button>
+            </form>
+
+            <!-- Results Section (Initially Hidden) -->
+            <div id="result" class="hidden"></div>
+
+            <!-- Suggestions Section (Initially Hidden) -->
+            <div id="suggestions" class="hidden">
+                <h3>Suggestions to Reduce Your Carbon Footprint</h3>
+                <ul id="suggestions-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Lifestyle Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Track Your Choices, Sustain the Future</h1>
+            <p>Login to receive your daily sustainable lifestyle tip!</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section with Background Image -->
+    <section id="main-content" class="centered-section">
+        <div class="background-image-container">
+            <img src="https://img.freepik.com/free-photo/sustainable-development-goals-still-life_23-2150196693.jpg" alt="Sustainability Image" class="background-image">
+        </div>
+
+        <!-- Login Section -->
+        <div id="login-section" class="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <p id="login-error" class="error-message"></p>
+        </div>
+        
+        <!-- Daily Tip Section (Initially Hidden) -->
+        <section id="tip-section" class="centered-section hidden">
+            <div class="tip-container">
+                <h2>Your Daily Sustainable Lifestyle Tip</h2>
+                <div id="tip-display"></div>
+                <button onclick="generateTip()">Get Another Tip</button>
+                <!-- New Home Button -->
+                <button onclick="goHome()">Go to Home Page</button>
+            </div>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
